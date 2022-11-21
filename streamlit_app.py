@@ -74,24 +74,14 @@ def object_detection(search_key,frame, model):
 # Main App
 def main():
     
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        st.write(' ')
-    
-    with col2:
-        st.title("Video Object Detection with CNN")
-    
-    with col3:
-        st.write(' ')
-    
+    st.title("Video Object Detection with CNN")
     st.text("VGG16")
 
     
-    choice = option_menu("Menu",["Home","Upload"],icons = ["house","cloud_upload"],menu_icon ="menu",default_index = 0,orientation = "horizontal")
+    choice = option_menu("Main Menu",["Home","Upload"],icons = ["house","cloud_upload"],menu_icon ="menu",default_index = 0,orientation = "horizontal")
     
-    if choice == "Upload a video":
-        st.subheader("Upload Your Short Video")
+    if choice == "Upload":
+        st.subheader("Upload Your Video")
 
         video_file_path = st.file_uploader("accepts mp4,avi", type=["mp4", "avi"])
 
@@ -149,9 +139,9 @@ def main():
 
     elif choice == "Home":
         st.subheader("Detect Objects In Video")
-       
+      
     
-  
+   
         
        
 

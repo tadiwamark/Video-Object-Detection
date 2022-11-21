@@ -74,6 +74,17 @@ def object_detection(search_key,frame, model):
 # Main App
 def main():
     
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+    st.write(' ')
+    
+    with col2:
+    st.title("Video Object Detection with CNN")
+    
+    with col3:
+    st.write(' ')
+    
     st.title("Video Object Detection with CNN")
     st.text("VGG16")
 

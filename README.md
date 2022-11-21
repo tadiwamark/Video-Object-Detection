@@ -9,8 +9,5 @@ https://colab.research.google.com/drive/1AzjTWpIimKDen6suPQL9huj3TfY3dygD?usp=sh
 # Link to Website
 https://tadiwamark-video-object-detection-streamlit-app-11fips.streamlit.app/
 
-# Link to video explanation
-https://youtu.be/PngB73ErVZ8
-
 # Link to video sample to be used for detection
 https://youtu.be/bwJ-TNu0hGM

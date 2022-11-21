@@ -10,6 +10,10 @@ from streamlit_option_menu import option_menu
 model= load_model('model.h5',compile=(False))
 st.markdown('<style>body{background-color:Orange;}</style>',unsafe_allow_html=True)
 
+CURRENT_THEME = "blue"
+IS_DARK_THEME = True
+EXPANDER_TEXT = """
+
 
 
 #Function
@@ -74,8 +78,8 @@ def object_detection(search_key,frame, model):
 # Main App
 def main():
     
-    st.title("*** Computer vision***")
-    st.text("InceptionV3")
+    st.title("Video Object Detection using CNN")
+    st.text("VGG16")
 
     
     choice = option_menu("Main Menu",["Home","Upload","About"],icons = ["house","cloud_upload","list-task"],menu_icon ="cast",default_index = 0,orientation = "horizontal")
@@ -83,7 +87,7 @@ def main():
     if choice == "Upload":
         st.subheader("Upload Your Video")
 
-        video_file_path = st.file_uploader("accepting mp4,avi", type=["mp4", "avi"])
+        video_file_path = st.file_uploader("accepts mp4,avi", type=["mp4", "avi"])
 
         if video_file_path is not None:
             path = video_file_path.name

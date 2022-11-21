@@ -78,12 +78,12 @@ def main():
     st.text("VGG16")
 
     
-    choice = option_menu("Menu",["Home","Upload"],icons = ["house","cloud_upload"],menu_icon ="cast",default_index = 0,orientation = "horizontal")
+    choice = option_menu("Menu",["Home","Upload"],icons = ["house","cloud_upload"],menu_icon ="menu",default_index = 0,orientation = "horizontal")
     
-    if choice == "Upload":
-        st.subheader("Upload Your Video")
+    if choice == "Upload a video":
+        st.subheader("Upload Your Short Video")
 
-        video_file_path = st.file_uploader("accepting mp4,avi", type=["mp4", "avi"])
+        video_file_path = st.file_uploader("accepts mp4,avi", type=["mp4", "avi"])
 
         if video_file_path is not None:
             path = video_file_path.name

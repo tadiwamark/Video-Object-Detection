@@ -11,3 +11,6 @@ https://tadiwamark-video-object-detection-streamlit-app-11fips.streamlit.app/
 
 # Link to video explanation
 https://youtu.be/PngB73ErVZ8
+
+# Link to video sample to be used for detection
+https://youtu.be/bwJ-TNu0hGM

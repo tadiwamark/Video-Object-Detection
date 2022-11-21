@@ -85,7 +85,6 @@ def main():
     with col3:
         st.write(' ')
     
-    st.title("Video Object Detection with CNN")
     st.text("VGG16")
 
     
